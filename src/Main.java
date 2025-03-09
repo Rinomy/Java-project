@@ -1,21 +1,27 @@
+import main.java.com.CarRental.Servecis.RentalService;
+import main.java.com.CarRental.Vehicle.Car;
+
+import java.util.Scanner;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.print("Hello and welcome!");
+        RentalService rentalService = new RentalService();
+        rentalService.addCar(new Car("Toyota", "Corolla", 30));
+        rentalService.addCar(new Car("Ford", "Mustang", 50));
+        rentalService.addCar(new Car("BMW", "X5", 70));
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-            System.out.println("Hello from Amir");
-
-            System.out.println("Hello from Yousef");
-
-            System.out.println("Hello from Sasha");
-
+        Scanner scanner = new Scanner(System.in);
+        while (true) {
+            rentalService.displayAvailableCars();
+            System.out.println("Enter the car number to rent (or -1 to exit):");
+            int choice = scanner.nextInt();
+            if (choice == -1) {
+                break;
+            }
+            rentalService.rentCar(choice);
         }
+        scanner.close();
     }
-}
+        }
