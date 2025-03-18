@@ -1,5 +1,5 @@
-package main.java.com.CarRental.Servecis;
-import main.java.com.CarRental.Vehicle.Car;
+package main.java.com.CarRental.servecis;
+import main.java.com.CarRental.entity.Car;
 
 import java.util.ArrayList;
 import java.util.List;

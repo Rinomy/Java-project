@@ -1,5 +1,5 @@
-import main.java.com.CarRental.Servecis.RentalService;
-import main.java.com.CarRental.Vehicle.Car;
+import main.java.com.CarRental.servecis.RentalService;
+import main.java.com.CarRental.entity.Car;
 
 import java.util.Scanner;
 

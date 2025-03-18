@@ -1,4 +1,4 @@
-package main.java.com.CarRental.User;
+package main.java.com.CarRental.entity;
 
 public class User {
     private String name;

@@ -1,4 +1,4 @@
-package main.java.com.CarRental.Vehicle;
+package main.java.com.CarRental.entity;
 
 public class Car {
     private String company;
