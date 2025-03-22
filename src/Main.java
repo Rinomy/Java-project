@@ -1,5 +1,5 @@
-import main.java.com.carrental.servecis.RentalService;
-import main.java.com.carrental.entity.Car;
+import com.carrental.servecis.RentalService;
+import com.carrental.entity.Car;
 
 import java.util.Scanner;
 
