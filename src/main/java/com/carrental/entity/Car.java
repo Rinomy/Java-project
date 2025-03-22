@@ -1,4 +1,4 @@
-package main.java.com.carrental.entity;
+package com.carrental.entity;
 
 public class Car {
     private String company;

@@ -1,5 +1,5 @@
-package main.java.com.carrental.servecis;
-import main.java.com.carrental.entity.Car;
+package com.carrental.servecis;
+import com.carrental.entity.Car;
 
 import java.util.ArrayList;
 import java.util.List;
