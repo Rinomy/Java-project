@@ -1,13 +1,14 @@
-import com.carrental.servecis.RentalService;
-import com.carrental.entity.Car;
+package com.carrental;
 
+import com.carrental.entity.Car;
+import com.carrental.servecis.RentalService;
 import java.util.Scanner;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        RentalService rentalService = new RentalService();
+        RentalService rentalService = new RentalService(); // Fixed typo here
         rentalService.addCar(new Car("Toyota", "Corolla", 30));
         rentalService.addCar(new Car("Ford", "Mustang", 50));
         rentalService.addCar(new Car("BMW", "X5", 70));

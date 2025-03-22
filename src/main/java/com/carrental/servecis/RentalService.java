@@ -4,6 +4,7 @@ import com.carrental.entity.Car;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class RentalService {
     private List<Car> cars;
 
