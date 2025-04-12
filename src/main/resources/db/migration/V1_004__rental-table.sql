@@ -1,6 +1,6 @@
 CREATE TABLE rentals (
     rental_id SERIAL PRIMARY KEY,
-    user_id INT NOT NULL REFERENCES users(user_id),
+    user_id INT NOT NULL REFERENCES users(id),
     car_id INT NOT NULL REFERENCES cars(car_id),
     rental_start_date DATE NOT NULL,
     rental_end_date DATE NOT NULL,

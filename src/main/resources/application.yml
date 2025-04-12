@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: carRental
+    version: 1.0.0
+  datasource:
+    username: myuser
+    password: mypassword
+    url: jdbc:postgresql://localhost:5432/mydatabase
+    driver-class-name: org.postgresql.Driver
+  flyway:
+    baseline-on-migrate: false
+    default-schema: public
+    user: ${spring.datasource.username}
+    password: ${spring.datasource.password}
+    schemas:
+      - public
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui
