@@ -26,6 +26,7 @@ public class Main {
             if (choice == -1) {
                 break;
             }
+            hello
             rentalService.rentCar(choice);
         }
         scanner.close();*/

@@ -5,21 +5,18 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.springframework.data.annotation.Id;
-import org.springframework.data.jdbc.core.mapping.AggregateReference;
+import org.springframework.data.relational.core.mapping.Column;
 import org.springframework.data.relational.core.mapping.Table;
 
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Table("users")
-public class User {
+@Table("roles")
+public class Role {
     @Id
-    private Long id;
-    private Integer roleId;
+    @Column("role_id")
+    private Integer id;
+    @Column("role_name")
     private String name;
-    private String email;
-    private String password;
-    private String phoneNumber;
-    private String address;
 }
