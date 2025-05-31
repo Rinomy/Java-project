@@ -1,7 +1,6 @@
 package com.carrental;
 
-import com.carrental.entity.Car;
-import com.carrental.servecis.RentalService;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
