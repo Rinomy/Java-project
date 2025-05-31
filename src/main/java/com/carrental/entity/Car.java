@@ -1,35 +1,31 @@
 package com.carrental.entity;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.relational.core.mapping.Column;
+import org.springframework.data.relational.core.mapping.Table;
+
+import java.time.LocalDateTime;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Table("cars")
 public class Car {
+    @Id
+    @Column("car_id")
+    private Long id;
+    @Column("make")
     private String company;
     private String model;
-    private double rentalPricePerDay;
-    private boolean isAvailable;
-
-    public Car(String company, String model, double rentalPricePerDay) {
-        this.company = company;
-        this.model = model;
-        this.rentalPricePerDay = rentalPricePerDay;
-        this.isAvailable = true;
-    }
-
-    public boolean isAvailable() {
-        return isAvailable;
-    }
-
-    public void rent() {
-        isAvailable = false;
-    }
-
-    public void returnCar() {
-        isAvailable = true;
-    }
-
-    public String getDescription() {
-        return company + " " + model + " - $" + rentalPricePerDay + " per day";
-    }
-
-    public double getRentalPricePerDay() {
-        return rentalPricePerDay;
-    }
+    private Integer year;
+    private String color;
+    private String licensePlate;
+    private Double rentalPricePerDay;
+    private Boolean isAvailable;
+    private LocalDateTime createdAt;
 }
